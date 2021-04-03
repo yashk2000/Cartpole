@@ -1,5 +1,7 @@
 # Cartpole
 
+## [REINFORCE](https://github.com/yashk2000/Cartpole/blob/main/cartpole.py)
+
 REINFORCE is a simple RL algorithm(perhaps too simple), which uses stochatic policy gradient function to find out which action would have the highest probability to give the maximum reward in a particular state. 
 
 A policy gradient method is a reinforcement learning approach that tries to directly learn a policy by generally using a parameterized function as a policy function
@@ -21,3 +23,19 @@ Here the pole keeps falling of pretty soon when the training is in the initial s
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/41234408/111776810-790ada80-88d8-11eb-9e05-2c781d87077a.gif)
 
 Now the cart is able to travel further without the pole dropping. This distance can be increased by making the network a bit deeper(I have used a very simple sequential network), and by increasing the number of maximum steps from 200 to a greater number. For this you can edit the `MAX_DUR` variable. 
+
+## [Evolutionary Algorithm: Genetic Algo](https://github.com/yashk2000/Cartpole/blob/main/EvolutionaryAlgos.ipynb) 
+
+- Evolutionary algorithms provide us with more powerful tools for our toolkit. Based on biological evolution, we
+  - Produce individuals
+  - Select the best from the current generation
+  - Shuffle the genes around
+  - Mutate them to introduce some variation
+  - Mate them to create new generations for the next population
+  
+- Evolutionary algorithms tend to be more data hungry and less data-efficient than gradient-based approaches; in some circumstances this may be fine, notably if you have a simulator.
+
+- Evolutionary algorithms can optimize over nondifferentiable or even discrete functions, which gradient-based methods cannot do.
+
+- Evolutionary strategies (ES) are a subclass of evolutionary algorithms that do not involve biological-like mating and recombination, but instead use copying
+with noise and weighted sums to create new individuals from a population.
